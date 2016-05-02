@@ -11,13 +11,52 @@
   <script src="/bower_components/angular/angular.min.js"></script>
   <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
   <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/bower_components/moment/moment.js"></script>
 
   <script src="/js/module.js"></script>
   <script src="/js/controllers.js"></script>
   <script src="/js/services.js"></script>
   <script src="/js/filters.js"></script>
 </head>
-<body>
-  
+<body ng-app='todoApp' ng-controller='homeCtrl'>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 noPad">
+        <div class="row">
+          <div class="top text-center">
+              <div class="datePlate">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h4>{{currentDay}}</h4>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h1 class="doM">{{currentDoM}}</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h5 class="monthYear">{{currentDate}}</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 noPad">
+            <div class="topBottom">
+              <div class="row pull-right">
+                <button class="btn addToDo">
+                  <span class="glyphicon glyphicon-plus"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -9,4 +9,9 @@ router.get('/', (req, res) => {
   res.sendFile(indexPath);
 });
 
+router.get('/api', (req, res) => {
+  var indexPath = path.join(__dirname, '../index.html');
+  res.sendFile(indexPath);
+});
+
 module.exports = router;
